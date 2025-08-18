@@ -1,13 +1,13 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
-import { AuthProvider, useAuth } from '../context/AuthContext';
-import { NotificationProvider } from '../context/NotificationContext';
+import { AuthProvider, useAuth } from './context/AuthContext';
+import { NotificationProvider } from './context/NotificationContext';
 
-import HeaderSection from '../components/HeaderSection';
-import Login from '../components/Login';
-import AdminDashboard from '../components/AdminDashboard';
-import PatientManager from '../components/PatientManager';
-import UploaderSection from '../components/UploaderSection';
+import HeaderSection from './components/HeaderSection';
+import Login from './components/Login';
+import AdminDashboard from './components/AdminDashboard';
+import PatientManager from './components/PatientManager';
+import UploaderSection from './components/UploaderSection';
 
 // A wrapper for routes that require authentication
 const PrivateRoute = ({ children }) => {
