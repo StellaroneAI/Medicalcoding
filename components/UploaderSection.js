@@ -66,6 +66,7 @@ const UploaderSection = () => {
         <p className="mt-2">Progress: {Math.round(progress)}%</p>
       )}
       {status && <p className="mt-2">{status}</p>}
+       
 import React from 'react';
 
 const UploaderSection = () => {
@@ -79,3 +80,4 @@ const UploaderSection = () => {
 };
 
 export default UploaderSection;
+
